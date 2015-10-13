@@ -1,0 +1,282 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".Main">
+
+    <TextView
+        android:text="Pay Calculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="@dimen/activity_vertical_margin"
+        android:layout_above="@+id/textView33"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:id="@+id/textView5" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Salary"
+        android:layout_marginTop="32dp"
+        android:layout_toEndOf="@+id/GrossPerWeek"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/GrossPerWeek"
+        android:inputType="number"
+        android:text="10600" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Annual"
+        android:id="@+id/textView"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Annual Salary"
+        android:id="@+id/textView2"
+        android:layout_alignTop="@+id/Salary"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Week"
+        android:id="@+id/textView3"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Month"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="£ 1000"
+        android:layout_marginRight="25dp"
+        android:id="@+id/GrossPerMonath"
+        android:layout_alignTop="@+id/NetPerMonth"
+        android:layout_alignRight="@+id/textView11"
+        android:layout_alignEnd="@+id/textView11" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="£ 250"
+        android:id="@+id/GrossPerWeek"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignLeft="@+id/GrossPerMonath"
+        android:layout_alignStart="@+id/GrossPerMonath" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="£ 12000"
+        android:id="@+id/GrossPerAnnuam"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignLeft="@+id/GrossPerWeek"
+        android:layout_alignStart="@+id/GrossPerWeek" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gross"
+
+        android:id="@+id/textView11"
+        android:layout_marginBottom="25dp"
+        android:layout_above="@+id/GrossPerMonath"
+        android:layout_toRightOf="@+id/textView2"
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Net"
+        android:id="@+id/textView14"
+        android:layout_toEndOf="@+id/button"
+        android:layout_alignTop="@+id/textView11"
+        android:layout_toRightOf="@+id/button"
+        android:layout_marginLeft="60dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="£ 1000"
+
+        android:id="@+id/NetPerMonth"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/textView14"
+        android:layout_alignStart="@+id/textView14" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="£ 1000"
+        android:id="@+id/NetPerWeek"
+        android:layout_alignTop="@+id/GrossPerWeek"
+        android:layout_alignLeft="@+id/NetPerMonth"
+        android:layout_alignStart="@+id/NetPerMonth" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="£ 1000"
+        android:id="@+id/NetPerAnnuam"
+        android:layout_alignTop="@+id/GrossPerAnnuam"
+        android:layout_alignLeft="@+id/NetPerWeek"
+        android:layout_alignStart="@+id/NetPerWeek" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:id="@+id/button"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/Salary"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NI"
+        android:id="@+id/textView24"
+        android:layout_toEndOf="@+id/button"
+        android:layout_alignTop="@+id/textView14"
+        android:layout_toRightOf="@+id/button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tax"
+        android:id="@+id/textView25"
+
+        android:layout_alignLeft="@+id/textView33"
+        android:layout_alignStart="@+id/textView33"
+        android:layout_alignTop="@+id/textView11" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="£ 1000"
+        android:id="@+id/TaxPerMonth"
+        android:layout_alignTop="@+id/GrossPerMonath"
+        android:layout_toRightOf="@+id/GrossPerMonath"
+        android:layout_toEndOf="@+id/GrossPerMonath" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="£ 1000"
+
+        android:id="@+id/NIPerMonth"
+        android:layout_above="@+id/textView3"
+        android:layout_alignRight="@+id/textView24"
+        android:layout_alignEnd="@+id/textView24" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="£ 1000"
+        android:id="@+id/TaxPerWeek"
+        android:layout_alignTop="@+id/NetPerWeek"
+        android:layout_alignLeft="@+id/TaxPerMonth"
+        android:layout_alignStart="@+id/TaxPerMonth" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="£ 1000"
+        android:id="@+id/NIPerWeek"
+        android:layout_alignTop="@+id/NetPerWeek"
+        android:layout_alignLeft="@+id/NIPerMonth"
+        android:layout_alignStart="@+id/NIPerMonth" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="£ 1000"
+        android:id="@+id/TaxPerAnnuam"
+        android:layout_alignTop="@+id/GrossPerAnnuam"
+        android:layout_alignLeft="@+id/TaxPerWeek"
+        android:layout_alignStart="@+id/TaxPerWeek" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="£ 1000"
+        android:id="@+id/NIPerAnnuam"
+
+        android:layout_alignTop="@+id/NetPerAnnuam"
+        android:layout_alignLeft="@+id/NIPerWeek"
+        android:layout_alignStart="@+id/NIPerWeek" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="6dp"
+        android:background="@android:color/holo_green_dark"
+        android:layout_below="@+id/textView14"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout4"></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/holo_green_dark"
+        android:id="@+id/relativeLayout5"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="29dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="27dp"
+        android:background="@android:color/holo_green_dark"
+        android:id="@+id/relativeLayout6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button"
+        android:layout_alignRight="@+id/relativeLayout4" />
+
+    <TextView
+        android:text="by Viral Patel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView33"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:id="@+id/ResetBtn"
+        android:layout_below="@+id/relativeLayout5"
+        android:layout_alignRight="@+id/textView33"
+        android:layout_alignEnd="@+id/textView33" />
+
+</RelativeLayout>
